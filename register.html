@@ -3,7 +3,6 @@
     <meta charset="utf8">
     <title>Register</title>
     <link href="css/register.css" rel="stylesheet" type="text/css">
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <header>
@@ -14,11 +13,7 @@
     <form action="#" method="POST">
         <p>
             用户名<br>
-<<<<<<< HEAD
             <input type="text" name="username" pattern="^[a-zA-Z0-9_]+$" required>
-=======
-            <input type="text" name="username" pattern="^[a-zA-Z0-9_]*$" required>
->>>>>>> 8034c8765a11508aff44ab8c5b2004d6418c97cc
         </p>
         <p>
             请设置密码<br>
@@ -41,13 +36,8 @@
         </p>
         <p>
             您的手机号<br>
-<<<<<<< HEAD
             <input type="text" name="phonenumber" pattern="^[1]\d{10}$" required>
-=======
-            <input type="number" name="phonenumber" pattern="^[1]\d{10}$" required>
->>>>>>> 8034c8765a11508aff44ab8c5b2004d6418c97cc
         </p>
-
         <p>
             您常用的设备类型<br>
             <input type="checkbox" name="PC" value="PC">PC
@@ -131,8 +121,8 @@
 ```
 </textarea>
         <br>
-        <input type="radio" value="agree" name="agree">同意
-        <input type="radio" value="disagree" name="agree">不同意
+        <input type="radio" value="agree" name="agree" required>同意
+        <input type="radio" value="disagree" name="agree" required>不同意
         <p>
             <input type="submit" value="注册" name="continue">
         </p>
